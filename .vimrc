@@ -33,12 +33,6 @@ set backspace=2 " allows backspace to delete over line ends
 "set whichwrap+=<,>,h,l,[,] " allows cursor to move over line ends
 "set paste " do not format incoming text (resets a lot of other options)
 
-" determine informations about current options
-"set " shows options with non-default value
-"set all " shows all options
-"setglobal " shows global option values
-"setlocal " shows local option values
-
 " enables syntax highlighting
 if has("syntax")
     syntax on
@@ -63,4 +57,3 @@ endif
 "if has('mouse')
 "    set mouse=a
 "endif
-
