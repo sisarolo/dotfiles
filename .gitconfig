@@ -1,0 +1,19 @@
+[user]
+    name = Sascha Roloff
+    email = sascha.roloff@gmail.com
+
+[push]
+    default = simple
+
+[core]
+    pager = cat # git diff
+#    pager = less
+#    filemode = false
+
+[diff]
+    tool = meld # git difftool
+
+[color]
+    ui = auto
+#    ui = true
+#    ui = always
