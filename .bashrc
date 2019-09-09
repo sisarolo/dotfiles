@@ -20,10 +20,10 @@ alias la='ls -lAF'
 alias l='ls -CF'
 
 # some cd aliases
-#alias +='pushd .'
-#alias -- -='popd'
-#alias ..='cd ..'
-#alias ...='cd ../..'
+alias +='pushd .'
+alias -- -='popd'
+alias ..='cd ..'
+alias ...='cd ../..'
 
 # git-like diff
-#alias diff='colordiff -u'
+alias diff='colordiff -u'
