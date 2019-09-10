@@ -104,7 +104,7 @@ if [ -f $(which colordiff) ] ; then
 fi
 
 # powerline
-if [ -f $(which powerline-daemon) ] ; then
+if [ -f $(which powerline) ] ; then
     . "$HOME/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh"
 fi
 
