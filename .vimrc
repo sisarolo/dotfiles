@@ -3,7 +3,7 @@ set ruler " shows current row and column in status line
 set showcmd " shows information about executed command in status line
 set wildmenu " shows list of matching candidates at command-line completion
 set showtabline=2 " always shows tab line
-"set laststatus=2 " always displays an extra line above status line
+set laststatus=2 " always displays an extra line above status line
 
 set background=dark " adapts color scheme for dark background
 set showmatch " shows matching brackets
@@ -57,3 +57,8 @@ endif
 "if has('mouse')
 "    set mouse=a
 "endif
+
+" powerline
+if filereadable(expand("~/.local/bin/powerline"))
+    set rtp+=~/.local/lib/python3.6/site-packages/powerline/bindings/vim
+endif
