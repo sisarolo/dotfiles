@@ -9,7 +9,7 @@ for dotfile in "${dotfiles[@]}"; do
         read -p "$HOME/$dotfile exists, override? (y/n): " res
         if [ -n "$res" -a \( "$res" = "y" -o "$res" = "Y" \) ]; then
             ln -sf "$PWD/$dotfile" "$HOME/$dotfile"
-            fi
+        fi
     else
         ln -sf "$PWD/$dotfile" "$HOME/$dotfile"
     fi
