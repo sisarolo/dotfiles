@@ -62,3 +62,4 @@ endif
 if filereadable(expand("~/.local/bin/powerline"))
     set rtp+=~/.local/lib/python3.6/site-packages/powerline/bindings/vim
 endif
+

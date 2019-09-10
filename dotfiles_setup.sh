@@ -14,3 +14,4 @@ for dotfile in "${dotfiles[@]}"; do
         ln -sf "$PWD/$dotfile" "$HOME/$dotfile"
     fi
 done
+
