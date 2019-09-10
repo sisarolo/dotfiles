@@ -99,12 +99,12 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 # colordiff
-if [ -f $(which colordiff) ] ; then
+if [ -f "$(which colordiff)" ] ; then
     alias diff='colordiff -u'
 fi
 
 # powerline
-if [ -f $(which powerline) ] ; then
+if [ -f "$(which powerline)" ] ; then
     . "$HOME/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh"
 fi
 

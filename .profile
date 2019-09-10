@@ -31,7 +31,7 @@ export EDITOR=vim
 export VISUAL=vim
 
 # powerline
-if [ -f $(which powerline-daemon) ] ; then
+if [ -f "$(which powerline-daemon)" ] ; then
     powerline-daemon -q
     export POWERLINE_BASH_CONTINUATION=1
     export POWERLINE_BASH_SELECT=1
@@ -39,7 +39,7 @@ fi
 
 # latex
 LATEXPATH="$HOME/latex/texlive/2017"
-if [ -d "LATEXPATH" ] ; then
+if [ -d "$LATEXPATH" ] ; then
     export PATH="$LATEXPATH/bin/x86_64-linux:$PATH"
     export INFOPATH="$LATEXPATH/texmf-dist/doc/info:$INFOPATH"
     export MANPATH="$LATEXPATH/texmf-dist/doc/man:$MANPATH"
@@ -47,7 +47,7 @@ fi
 
 # qt
 QTPATH="$HOME/qt/Qt5.6.0"
-if [ -d $QTPATH ]; then
+if [ -d "$QTPATH" ]; then
     export PATH="$QTPATH/Tools/QtCreator/bin:$PATH"
     export PATH="$QTPATH/5.6/gcc_64/bin:$PATH"
     export LD_LIBRARY_PATH="$QTPATH/Tools/QtCreator/lib:$LD_LIBRARY_PATH"
