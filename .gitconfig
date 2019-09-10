@@ -2,8 +2,9 @@
     name = Sascha Roloff
     email = sascha.roloff@gmail.com
 
-[github]
-    user = sisarolo
+[credential]
+    username = sisarolo
+    helper = "cache --timeout=900"
 
 [alias]
     unstage = reset HEAD --
