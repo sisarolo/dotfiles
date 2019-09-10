@@ -17,10 +17,13 @@
     default = simple # pushing the current branch to a remote repository is refused, if no upstream branch exists for the local branch
 
 [diff]
-    tool = meld
+    tool = meld # git difftool
 
 [difftool]
     prompt = false
+
+[merge]
+    tool = meld # git mergetool
 
 [pager]
     log = diff-highlight | less
