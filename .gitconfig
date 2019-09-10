@@ -16,13 +16,22 @@
 [push]
     default = simple # pushing the current branch to a remote repository is refused, if no upstream branch exists for the local branch
 
-[core]
-#    pager = cat # git diff
-#    pager = less
-#    filemode = false
-
 [diff]
-#    tool = meld # git difftool
+    tool = meld
+
+[difftool]
+    prompt = false
+
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
+
+[core]
+#    editor = vim
+#    filemode = false
+#    pager = cat
+#    pager = less
 
 [color]
 #    ui = auto
