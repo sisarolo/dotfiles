@@ -2,18 +2,25 @@
     name = Sascha Roloff
     email = sascha.roloff@gmail.com
 
+[alias]
+    unstage = reset HEAD --
+    unmodify = checkout --
+    last = log -1 HEAD
+    list = log --pretty=oneline --abbrev-commit
+    glog = log --all --pretty='format:%d %Cgreen%h%Creset %an - %s' --graph
+
 [push]
-    default = simple
+#    default = simple
 
 [core]
-    pager = cat # git diff
+#    pager = cat # git diff
 #    pager = less
 #    filemode = false
 
 [diff]
-    tool = meld # git difftool
+#    tool = meld # git difftool
 
 [color]
-    ui = auto
+#    ui = auto
 #    ui = true
 #    ui = always
