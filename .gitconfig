@@ -14,7 +14,7 @@
     glog = log --all --pretty='format:%d %Cgreen%h%Creset %an - %s' --graph
 
 [push]
-#    default = simple
+    default = simple # pushing the current branch to a remote repository is refused, if no upstream branch exists for the local branch
 
 [core]
 #    pager = cat # git diff
