@@ -47,7 +47,7 @@ fi
 
 # qt
 QTPATH="$HOME/qt/Qt5.6.0"
-if [ -d "$QTPATH" ]; then
+if [ -d "$QTPATH" ] ; then
     export PATH="$QTPATH/Tools/QtCreator/bin:$PATH"
     export PATH="$QTPATH/5.6/gcc_64/bin:$PATH"
     export LD_LIBRARY_PATH="$QTPATH/Tools/QtCreator/lib:$LD_LIBRARY_PATH"
@@ -55,4 +55,7 @@ if [ -d "$QTPATH" ]; then
 fi
 
 # unreal engine
-export export UE4_ROOT="$HOME/playspace/UnrealEngine_4.21"
+UE4_ROOT="$HOME/playspace/UnrealEngine_4.21"
+if [ -d "$UE4_ROOT" ] ; then
+    export $UE4_ROOT
+fi
