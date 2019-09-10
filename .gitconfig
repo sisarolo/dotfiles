@@ -2,6 +2,9 @@
     name = Sascha Roloff
     email = sascha.roloff@gmail.com
 
+[github]
+    user = sisarolo
+
 [alias]
     unstage = reset HEAD --
     unmodify = checkout --
