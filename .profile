@@ -31,8 +31,8 @@ export EDITOR=vim
 export VISUAL=vim
 
 # powerline
-if [ -f "$(which powerline-daemon)" ] ; then
-    powerline-daemon -q
+if [ -f "$HOME/.local/bin/powerline-daemon" ] ; then
+    "$HOME/.local/bin/powerline-daemon" -q
     export POWERLINE_BASH_CONTINUATION=1
     export POWERLINE_BASH_SELECT=1
 fi
