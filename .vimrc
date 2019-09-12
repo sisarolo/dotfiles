@@ -19,7 +19,7 @@ set hlsearch " highlights search results
 "set ignorecase " case insensitive search
 "set smartcase " be case sensitive if word contains an upper case letter
 
-set expandtab " spaces are inserted instead of a <Tab> symbol, when <Tab> key is hit (:retab, Ctrl+V <Tab>)
+set expandtab " spaces are inserted instead of a <Tab> symbol when <Tab> key is hit (:retab, Ctrl+V <Tab>)
 set softtabstop=4 " number of columns hitting the <Tab> key counts for
 set tabstop=4 " number of columns a <Tab> symbol counts for
 set smartindent " same indentation like line before + considers curly brackets level (makes autoindent and cindent obsolete)
@@ -45,7 +45,7 @@ if has("autocmd")
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-" sets number of characters at which an automatic line break is inserted (only for text files)
+" after this amount of characters a line break is inserted (only for text files)
 "if has("autocmd")
 "    autocmd FileType text setlocal textwidth=80
 "endif
