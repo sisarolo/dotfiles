@@ -2,19 +2,15 @@
     name = Sascha Roloff
     email = sascha.roloff@gmail.com
 
-[credential]
+[credential "https://github.com"]
     username = sisarolo
     helper = "cache --timeout=900"
 
-[alias]
-    unstage = reset HEAD --
-    unmodify = checkout --
-    last = log -1 HEAD
-    list = log --pretty=oneline --abbrev-commit
-    glog = log --all --pretty='format:%d %Cgreen%h%Creset %an - %s' --graph
-
-[push]
-    default = simple # pushing the current branch to a remote repository is refused, if no upstream branch exists for the local branch
+[core]
+    editor = vim
+#    pager = cat
+#    pager = less
+#    filemode = false
 
 [diff]
     tool = meld # git difftool
@@ -30,14 +26,16 @@
     show = diff-highlight | less
     diff = diff-highlight | less
 
-[core]
-#    editor = vim
-#    filemode = false
-#    pager = cat
-#    pager = less
-
 [color]
-#    ui = auto
-#    ui = true
-#    ui = always
+    ui = auto # enables color on terminal output, but disables for redirections and pipes
+
+[alias]
+    unstage = reset HEAD --
+    unmodify = checkout --
+    last = log -1 HEAD
+    list = log --pretty=oneline --abbrev-commit
+    glog = log --all --pretty='format:%d %Cgreen%h%Creset %an - %s' --graph
+
+[push]
+    default = simple # pushing the current branch to a remote repository is refused, if no upstream branch exists for the local branch
 
