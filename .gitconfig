@@ -16,6 +16,9 @@
     list = log --pretty=oneline --abbrev-commit
     glog = log --all --pretty='format:%d %Cgreen%h%Creset %an - %s' --graph
 
+[log]
+    date = local # timestamps will be displayed in local time of the creators time zone
+
 [core]
     editor = vim
     pager = less # sets pager to display output of log, show, diff, and status (--no-pager, -P)
