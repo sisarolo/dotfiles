@@ -96,7 +96,10 @@ alias l='ls -CF'
 alias +='pushd .'
 alias -- -='popd'
 alias ..='cd ..'
-alias ...='cd ../..'
+
+# make cp and mv more secure
+alias cp='cp -i'
+alias mv='mv -i'
 
 # colordiff
 if [ -f "$(which colordiff)" ] ; then
