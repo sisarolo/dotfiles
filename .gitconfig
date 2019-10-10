@@ -6,10 +6,23 @@
     username = sisarolo
     helper = "cache --timeout=900"
 
+[push]
+    default = simple # pushing the current branch to a remote repository is refused, if no upstream branch exists for the local branch
+
+[alias]
+    unstage = reset HEAD --
+    unmodify = checkout --
+    last = log -1 HEAD
+    list = log --pretty=oneline --abbrev-commit
+    glog = log --all --pretty='format:%d %Cgreen%h%Creset %an - %s' --graph
+
 [core]
     editor = vim
     pager = less # sets pager to display output of log, show, diff, and status
 #    filemode = false
+
+[color]
+    ui = auto # enables color on terminal output, but disables for redirections and pipes
 
 [pager]
     diff = diff-highlight
@@ -23,17 +36,4 @@
 
 [merge]
     tool = meld # git mergetool
-
-[color]
-    ui = auto # enables color on terminal output, but disables for redirections and pipes
-
-[alias]
-    unstage = reset HEAD --
-    unmodify = checkout --
-    last = log -1 HEAD
-    list = log --pretty=oneline --abbrev-commit
-    glog = log --all --pretty='format:%d %Cgreen%h%Creset %an - %s' --graph
-
-[push]
-    default = simple # pushing the current branch to a remote repository is refused, if no upstream branch exists for the local branch
 
