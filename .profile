@@ -32,7 +32,7 @@ export VISUAL=vim
 
 # powerline
 if [ -f "$HOME/.local/bin/powerline-daemon" ] ; then
-    "$HOME/.local/bin/powerline-daemon" -q
+    $HOME/.local/bin/powerline-daemon -q
     export POWERLINE_BASH_CONTINUATION=1
     export POWERLINE_BASH_SELECT=1
 fi

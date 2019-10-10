@@ -61,7 +61,7 @@ endif
 "endif
 
 " powerline
-if filereadable(expand("~/.local/bin/powerline"))
+if isdirectory(expand("~/.local/lib/python3.6/site-packages/powerline"))
     set rtp+=~/.local/lib/python3.6/site-packages/powerline/bindings/vim
 endif
 
