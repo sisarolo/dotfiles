@@ -18,7 +18,7 @@
 
 [core]
     editor = vim
-    pager = less # sets pager to display output of log, show, diff, and status
+    pager = less # sets pager to display output of log, show, diff, and status (--no-pager, -P)
 #    filemode = false
 
 [color]
@@ -26,7 +26,7 @@
 
 [pager]
     diff = diff-highlight
-    status =
+    status = # (--paginate, -p)
 
 [diff]
     tool = meld # git difftool
