@@ -26,9 +26,9 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export PAGER=less
 export EDITOR=vim
 export VISUAL=vim
+export PAGER=less
 
 # powerline
 if [ -f "$HOME/.local/bin/powerline-daemon" ] ; then

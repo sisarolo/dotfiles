@@ -8,9 +8,12 @@
 
 [core]
     editor = vim
-#    pager = cat
-#    pager = less
+    pager = less # sets pager to display output of log, show, diff, and status
 #    filemode = false
+
+[pager]
+    diff = diff-highlight
+    status =
 
 [diff]
     tool = meld # git difftool
@@ -20,11 +23,6 @@
 
 [merge]
     tool = meld # git mergetool
-
-[pager]
-    log = diff-highlight | less
-    show = diff-highlight | less
-    diff = diff-highlight | less
 
 [color]
     ui = auto # enables color on terminal output, but disables for redirections and pipes
