@@ -114,9 +114,9 @@ if [ -f "$(which colordiff)" ] ; then
 fi
 
 # powerline
-if [ -d "$HOME/.local/lib/python3.6/site-packages/powerline" ] ; then
-    . $HOME/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
-fi
+#if [ -d "$HOME/.local/lib/python3.6/site-packages/powerline" ] ; then
+#    . $HOME/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
+#fi
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

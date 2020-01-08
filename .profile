@@ -31,12 +31,12 @@ export EDITOR=vim
 export VISUAL=vim
 export PAGER=less
 
-# powerline
-if [ -f "$HOME/.local/bin/powerline-daemon" ] ; then
-    $HOME/.local/bin/powerline-daemon -q
-    export POWERLINE_BASH_CONTINUATION=1
-    export POWERLINE_BASH_SELECT=1
-fi
+# Powerline
+#if [ -f "$HOME/.local/bin/powerline-daemon" ] ; then
+#    $HOME/.local/bin/powerline-daemon -q
+#    export POWERLINE_BASH_CONTINUATION=1
+#    export POWERLINE_BASH_SELECT=1
+#fi
 
 # Latex
 LATEXPATH="$HOME/latex/texlive/2017"
