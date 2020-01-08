@@ -15,7 +15,7 @@ set listchars=tab:»\ ,trail:-,nbsp:+,extends:›,precedes:‹
 "set listchars=tab:>\ ,trail:-,nbsp:+,extends:>,precedes:<
 
 set hlsearch " highlights search results
-"set incsearch " jumps to search results already during writing
+set incsearch " jumps to search results already during writing
 "set ignorecase " case insensitive search
 "set smartcase " be case sensitive if word contains an upper case letter
 

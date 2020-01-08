@@ -7,6 +7,7 @@
 # the default umask is set in /etc/profile; for setting the umask
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
+umask 002
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
@@ -37,7 +38,7 @@ if [ -f "$HOME/.local/bin/powerline-daemon" ] ; then
     export POWERLINE_BASH_SELECT=1
 fi
 
-# latex
+# Latex
 LATEXPATH="$HOME/latex/texlive/2017"
 if [ -d "$LATEXPATH" ] ; then
     export PATH="$LATEXPATH/bin/x86_64-linux:$PATH"
@@ -45,7 +46,7 @@ if [ -d "$LATEXPATH" ] ; then
     export MANPATH="$LATEXPATH/texmf-dist/doc/man:$MANPATH"
 fi
 
-# qt
+# Qt
 QTPATH="$HOME/qt/Qt5.6.0"
 if [ -d "$QTPATH" ] ; then
     export PATH="$QTPATH/Tools/QtCreator/bin:$PATH"
@@ -54,9 +55,11 @@ if [ -d "$QTPATH" ] ; then
     export LD_LIBRARY_PATH="$QTPATH/5.6/gcc_64/lib:$LD_LIBRARY_PATH"
 fi
 
-# unreal engine
-UE4_ROOT="$HOME/playspace/UnrealEngine_4.21"
-if [ -d "$UE4_ROOT" ] ; then
-    export UE4_ROOT
+# Cuda
+CUDAPATH="/usr/local/cuda"
+if [ -d "$CUDAPATH" ] ; then
+    export CUDA_HOME=$CUDAPATH
+    export PATH="$CUDAPATH/bin:$CUDAPATH/NsightCompute-1.0:$PATH"
+    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
 fi
 

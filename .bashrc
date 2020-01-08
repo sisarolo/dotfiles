@@ -97,9 +97,16 @@ alias +='pushd .'
 alias -- -='popd'
 alias ..='cd ..'
 
-# make cp and mv more secure
-alias cp='cp -i'
-alias mv='mv -i'
+# make cp, mv, and rm more secure
+#alias cp='cp -i'
+#alias mv='mv -i'
+#alias rm='rm -i'
+
+# use alias versions of commands (the trailing space causes the next word to be checked for alias substitution)
+#alias xargs='xargs '
+#alias watch='watch '
+#alias sudo='sudo '
+#alias sudo='sudo -H -E '
 
 # colordiff
 if [ -f "$(which colordiff)" ] ; then
