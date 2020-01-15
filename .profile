@@ -31,6 +31,14 @@ export EDITOR=vim
 export VISUAL=vim
 export PAGER=less
 
+# Proxy server
+#export http_proxy="http://proxy-ip:port"
+#export https_proxy="http://proxy-ip:port"
+#export ftp_proxy="http://proxy-ip:port"
+#export HTTP_PROXY=$http_proxy
+#export HTTPS_PROXY=$https_proxy
+#export FTP_PROXY=$ftp_proxy
+
 # Powerline
 #if [ -f "$HOME/.local/bin/powerline-daemon" ] ; then
 #    $HOME/.local/bin/powerline-daemon -q
