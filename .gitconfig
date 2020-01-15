@@ -22,9 +22,10 @@
 [core]
     editor = vim
     pager = less # sets pager to display output of log, show, diff, and status (--no-pager, -P)
-#    filemode = false
+#    fileMode = false # executable bit of files is ignored (bad practice)
 
 [pager]
+#    diff = cat
     diff = diff-highlight
     status = # (--paginate, -p)
 
