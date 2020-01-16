@@ -19,8 +19,8 @@ set incsearch " jumps to search results already during writing
 "set ignorecase " case insensitive search
 "set smartcase " be case sensitive if word contains an upper case letter
 
-set expandtab " when <tab> key is hit, spaces are inserted instead of a <tab> symbol (:retab replaces existing <tab> symbols with spaces, ctrl+v <tab> interts a <tab> symbol in insert mode)
-set softtabstop=4 " when <tab> key is hit, how many columns does it count for (spaces or <tab> symbol)
+set expandtab " when <tab> key is hit, spaces are inserted instead of <tab> symbols (:retab replaces existing <tab> symbols with spaces, ctrl+v <tab> interts a <tab> symbol in insert mode)
+set softtabstop=4 " when <tab> key is hit, how many columns does it count for (spaces or <tab> symbols)
 set tabstop=4 " number of columns a <tab> symbol counts for
 set smartindent " same indentation like line before + considers curly brackets level (makes autoindent and cindent obsolete)
 set shiftwidth=4 " how many columns does indentation count for (>>, <<)
