@@ -61,11 +61,6 @@ endif
 "    set mouse=a
 "endif
 
-" powerline
-"if isdirectory(expand("~/.local/lib/python3.6/site-packages/powerline"))
-"    set rtp+=~/.local/lib/python3.6/site-packages/powerline/bindings/vim
-"endif
-
 " tmux (tmux sets the TERM environment variable to 'screen' instead of 'xterm')
 if &term =~ '^screen'
     " tmux will send xterm-style keys when its xterm-keys option is on
@@ -74,4 +69,9 @@ if &term =~ '^screen'
     execute "set <xRight>=\e[1;*C"
     execute "set <xLeft>=\e[1;*D"
 endif
+
+" powerline
+"if isdirectory(expand("~/.local/lib/python3.6/site-packages/powerline"))
+"    set rtp+=~/.local/lib/python3.6/site-packages/powerline/bindings/vim
+"endif
 
