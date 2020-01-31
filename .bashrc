@@ -109,12 +109,12 @@ alias ..='cd ..'
 #alias sudo='sudo -H -E '
 
 # colordiff
-if [ -f "$(which colordiff)" ] ; then
+if [ -f "$(which colordiff)" ]; then
     alias diff='colordiff -u'
 fi
 
 # powerline
-#if [ -d "$HOME/.local/lib/python3.6/site-packages/powerline" ] ; then
+#if [ -d "$HOME/.local/lib/python3.6/site-packages/powerline" ]; then
 #    . $HOME/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
 #fi
 
