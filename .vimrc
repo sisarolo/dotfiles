@@ -24,9 +24,10 @@ set softtabstop=4 " when <tab> key is hit, how many columns does it count for (s
 set tabstop=4 " number of columns a <tab> symbol counts for
 set smartindent " same indentation like line before + considers curly brackets level (makes autoindent and cindent obsolete)
 set shiftwidth=4 " how many columns does indentation count for (>>, <<)
-"set smarttab " ???
+"set smarttab " ??
 
 set nofoldenable " disables text folding
+set clipboard=exclude:.* " disables trying to connect to an X server to enable using the clipboard
 set noswapfile
 set nobackup
 set nowritebackup
