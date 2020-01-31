@@ -75,3 +75,8 @@ endif
 "    set rtp+=~/.local/lib/python3.6/site-packages/powerline/bindings/vim
 "endif
 
+" fzf
+if isdirectory(expand("~/.linuxbrew/opt/fzf"))
+    set rtp+=~/.linuxbrew/opt/fzf
+endif
+

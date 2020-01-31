@@ -37,6 +37,16 @@ export PAGER=less
 #    export POWERLINE_BASH_SELECT=1
 #fi
 
+# Homebrew
+if [ -d "$HOME/.linuxbrew/bin" ]; then
+    PATH="$HOME/.linuxbrew/bin:$PATH"
+fi
+
+# fzf
+if [ -f "$(which fzf)" -a -f "$(which bat)" ]; then
+    export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --info=inline --no-mouse --multi --preview "[ -f {} ] && bat --style=plain --theme=ansi-dark --color=always {} || echo \"no preview\""'
+fi
+
 # Proxy server
 #export http_proxy="http://proxy-ip:port"
 #export https_proxy="http://proxy-ip:port"
