@@ -3,7 +3,7 @@
 # TODO: script should only be executed from this directory
 # ${BASH_SOURCE[0]}
 
-dotfiles=(".bashrc" ".profile" ".inputrc" ".vimrc" ".gitconfig" ".tmux.conf")
+dotfiles=(.bashrc .profile .inputrc .vimrc .gitconfig .tmux.conf)
 for dotfile in "${dotfiles[@]}"; do
     if [ -f "$HOME/$dotfile" ]; then
         read -p "$HOME/$dotfile exists, override? (y/n): " res
