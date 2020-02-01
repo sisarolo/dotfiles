@@ -70,11 +70,6 @@ if &term =~ '^screen'
     execute "set <xLeft>=\e[1;*D"
 endif
 
-" powerline
-"if isdirectory(expand("~/.local/lib/python3.6/site-packages/powerline"))
-"    set rtp+=~/.local/lib/python3.6/site-packages/powerline/bindings/vim
-"endif
-
 " fzf
 if isdirectory(expand("~/.linuxbrew/opt/fzf"))
     set rtp+=~/.linuxbrew/opt/fzf

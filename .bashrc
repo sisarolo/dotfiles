@@ -113,11 +113,6 @@ if [ -f "$(which colordiff)" ]; then
     alias diff='colordiff -u'
 fi
 
-# powerline
-#if [ -d "$HOME/.local/lib/python3.6/site-packages/powerline" ]; then
-#    . $HOME/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
-#fi
-
 # fzf
 if [ -f "$HOME/.linuxbrew/Cellar/fzf/0.20.0/shell/completion.bash" ]; then
     . $HOME/.linuxbrew/Cellar/fzf/0.20.0/shell/completion.bash
