@@ -57,6 +57,17 @@ if [ -f "$(which fzf)" ]; then
     fi
 fi
 
+# enhancd
+if [ -f "$HOME/enhancd/init.sh" ]; then
+    ENHANCD_COMMAND=cde
+    ENHANCD_DISABLE_DOT=1
+    ENHANCD_DISABLE_HYPHEN=1
+    if [ -f "$(which fzf)" ]; then
+        ENHANCD_FILTER=fzf
+    fi
+    . "$HOME/enhancd/init.sh"
+fi
+
 # Proxy server
 #export http_proxy="http://proxy-ip:port"
 #export https_proxy="http://proxy-ip:port"
