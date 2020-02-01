@@ -42,9 +42,19 @@ if [ -d "$HOME/.linuxbrew/bin" ]; then
     PATH="$HOME/.linuxbrew/bin:$PATH"
 fi
 
+# bat
+if [ -f "$(which bat)" ]; then
+    export BAT_STYLE='plain'
+    export BAT_THEME='TwoDark'
+fi
+
 # fzf
-if [ -f "$(which fzf)" -a -f "$(which bat)" ]; then
-    export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --info=inline --no-mouse --multi --preview "[ -f {} ] && bat --style=plain --theme=ansi-dark --color=always {} || echo \"no preview\""'
+if [ -f "$(which fzf)" ]; then
+    if [ -f "$(which bat)" ]; then
+        export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --info=inline --no-mouse --multi --preview "[ -f {} ] && bat --color=always {} || echo \"no preview\""'
+    else
+        export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --info=inline --no-mouse --multi --preview "[ -f {} ] && cat {} || echo \"no preview\""'
+    fi
 fi
 
 # Proxy server
