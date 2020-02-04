@@ -106,7 +106,6 @@ alias ..='cd ..'
 #alias xargs='xargs '
 #alias watch='watch '
 #alias sudo='sudo '
-#alias sudo='sudo -H -E '
 
 # colordiff
 if [ -f "$(which colordiff)" ]; then
