@@ -1,4 +1,5 @@
 set number " activates line numbers
+set relativenumber " activates relative line numbers
 set ruler " shows current row and column in status line
 set showcmd " shows information about executed command in status line
 set wildmenu " shows list of matching candidates at command-line completion
