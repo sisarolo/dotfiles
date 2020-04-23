@@ -66,9 +66,9 @@ if [ -f "$HOME/enhancd/init.sh" ]; then
 fi
 
 # Proxy server
-#export http_proxy="http://proxy-ip:port"
-#export https_proxy="http://proxy-ip:port"
-#export ftp_proxy="http://proxy-ip:port"
+#export http_proxy="http://proxy.domain.com:port"
+#export https_proxy="http://proxy.domain.com:port"
+#export ftp_proxy="http://proxy.domain.com:port"
 #export HTTP_PROXY=$http_proxy
 #export HTTPS_PROXY=$https_proxy
 #export FTP_PROXY=$ftp_proxy

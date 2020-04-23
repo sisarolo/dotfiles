@@ -6,6 +6,12 @@
     username = sisarolo
     helper = "cache --timeout=900"
 
+#[http "https://company.domain.com"]
+#    sslCert = ~/pkifiles/cert-alm.crt
+#    sslKey = ~/pkifiles/cert-alm.key
+#    sslVerify = false
+#    proxy = http://proxy.domain.com:port
+
 [alias]
     unstage = reset HEAD --
     unmodify = checkout --
