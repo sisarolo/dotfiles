@@ -37,6 +37,10 @@
 
 [merge]
     tool = meld # git mergetool
+    conflictstyle = diff3 # for merge conflicts, the common ancestor of HEAD and the merged branch is displayed besides the changes from HEAD and the merged branch
+
+[mergetool]
+    prompt = false
 
 [color]
     ui = auto # enables color on terminal output, but disables for redirections and pipes

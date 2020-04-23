@@ -29,6 +29,10 @@ fi
 export EDITOR=vim
 export VISUAL=vim
 export PAGER=less
+#export LESS=-X
+#export LANG=en_US.utf8
+#export TERM
+#export DISPLAY
 
 # Homebrew
 if [ -d "$HOME/.linuxbrew/bin" ]; then
