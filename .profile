@@ -29,41 +29,6 @@ fi
 export EDITOR=vim
 export VISUAL=vim
 export PAGER=less
-#export LESS=-X
-#export LANG=en_US.utf8
-#export TERM
-#export DISPLAY
-
-# Homebrew
-if [ -d "$HOME/.linuxbrew/bin" ]; then
-    PATH="$HOME/.linuxbrew/bin:$PATH"
-fi
-
-# bat
-if [ -f "$(which bat)" ]; then
-    export BAT_STYLE='plain'
-    export BAT_THEME='TwoDark'
-fi
-
-# fzf
-if [ -f "$(which fzf)" ]; then
-    if [ -f "$(which bat)" ]; then
-        export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --info=inline --no-mouse --multi --preview "[ -f {} ] && bat --color=always {} || echo \"no preview\""'
-    else
-        export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --info=inline --no-mouse --multi --preview "[ -f {} ] && cat {} || echo \"no preview\""'
-    fi
-fi
-
-# enhancd
-if [ -f "$HOME/enhancd/init.sh" ]; then
-    ENHANCD_COMMAND=cde
-    ENHANCD_DISABLE_DOT=1
-    ENHANCD_DISABLE_HYPHEN=1
-    if [ -f "$(which fzf)" ]; then
-        ENHANCD_FILTER=fzf
-    fi
-    . "$HOME/enhancd/init.sh"
-fi
 
 # Proxy server
 #export http_proxy="http://proxy.domain.com:port"
@@ -72,29 +37,4 @@ fi
 #export HTTP_PROXY=$http_proxy
 #export HTTPS_PROXY=$https_proxy
 #export FTP_PROXY=$ftp_proxy
-
-# Latex
-LATEXPATH="$HOME/latex/texlive/2017"
-if [ -d "$LATEXPATH" ] ; then
-    export PATH="$LATEXPATH/bin/x86_64-linux:$PATH"
-    export INFOPATH="$LATEXPATH/texmf-dist/doc/info:$INFOPATH"
-    export MANPATH="$LATEXPATH/texmf-dist/doc/man:$MANPATH"
-fi
-
-# Qt
-QTPATH="$HOME/qt/Qt5.6.0"
-if [ -d "$QTPATH" ] ; then
-    export PATH="$QTPATH/Tools/QtCreator/bin:$PATH"
-    export PATH="$QTPATH/5.6/gcc_64/bin:$PATH"
-    export LD_LIBRARY_PATH="$QTPATH/Tools/QtCreator/lib:$LD_LIBRARY_PATH"
-    export LD_LIBRARY_PATH="$QTPATH/5.6/gcc_64/lib:$LD_LIBRARY_PATH"
-fi
-
-# Cuda
-CUDAPATH="/usr/local/cuda"
-if [ -d "$CUDAPATH" ] ; then
-    export CUDA_HOME=$CUDAPATH
-    export PATH="$CUDAPATH/bin:$CUDAPATH/NsightCompute-1.0:$PATH"
-    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
-fi
 

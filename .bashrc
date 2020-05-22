@@ -75,7 +75,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='LC_ALL=C ls --color=auto --group-directories-first --time-style=long-iso'
+    alias ls='ls --color=auto --group-directories-first --time-style=long-iso'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -83,9 +83,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
-
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
 alias ll='ls -lF'
@@ -97,24 +94,9 @@ alias +='pushd .'
 alias -- -='popd'
 alias ..='cd ..'
 
-# make cp, mv, and rm more secure
-#alias cp='cp -i'
-#alias mv='mv -i'
-#alias rm='rm -i'
-
-# use alias versions of commands (the trailing space causes the next word to be checked for alias substitution)
-#alias xargs='xargs '
-#alias watch='watch '
-#alias sudo='sudo '
-
 # colordiff
 if [ -f "$(which colordiff)" ]; then
     alias diff='colordiff -u'
-fi
-
-# fzf
-if [ -f "$HOME/.linuxbrew/Cellar/fzf/0.20.0/shell/completion.bash" ]; then
-    . $HOME/.linuxbrew/Cellar/fzf/0.20.0/shell/completion.bash
 fi
 
 # Add an "alert" alias for long running commands.  Use like so:
