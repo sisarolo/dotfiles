@@ -84,6 +84,11 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# enable colored diff version
+if [ -x /usr/bin/colordiff ]; then
+    alias diff='colordiff -u'
+fi
+
 # some more ls aliases
 alias ll='ls -lF'
 alias la='ls -lAF'
@@ -93,11 +98,6 @@ alias l='ls -CF'
 alias +='pushd .'
 alias -- -='popd'
 alias ..='cd ..'
-
-# colordiff
-if [ -f "$(which colordiff)" ]; then
-    alias diff='colordiff -u'
-fi
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
