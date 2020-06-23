@@ -1,6 +1,6 @@
 [user]
     name = Sascha Roloff
-    email = sascha.roloff@gmail.com
+#    email = sascha.roloff@gmail.com
 
 [credential "https://github.com"]
     username = sisarolo
@@ -31,8 +31,8 @@
 #    fileMode = false # executable bit of files is ignored (bad practice)
 
 [pager]
-#    diff = cat
-    diff = diff-highlight
+    diff = cat
+#    diff = diff-highlight
     status = # (--paginate, -p)
 
 [diff]
@@ -43,7 +43,7 @@
 
 [merge]
     tool = meld # git mergetool
-    conflictstyle = diff3 # for merge conflicts, the common ancestor of HEAD and the merged branch is displayed besides the changes from HEAD and the merged branch
+#    conflictstyle = diff3 # for merge conflicts, the common ancestor of HEAD and the merged branch is displayed besides the changes from HEAD and the merged branch
 
 [mergetool]
     prompt = false
