@@ -1,0 +1,12 @@
+{
+    "update.showReleaseNotes": false,
+    "workbench.sideBar.location": "right",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on",
+    "[Log]": {
+        "editor.wordWrap": "on"
+    },
+    "files.autoSave": "off"
+}
