@@ -8,10 +8,10 @@ for dotfile in "${dotfiles[@]}"; do
     if [ -f "$dotfile" ]; then
         read -p "$dotfile exists, override? (y/n): " res
         if [ -n "$res" -a \( "$res" = "y" -o "$res" = "Y" \) ]; then
-            ln -sf "$(basename $dotfile)" "$dotfile"
+            ln -sf "$(realpath $(basename $dotfile))" "$dotfile"
         fi
     else
-        ln -sf "$(basename $dotfile)" "$dotfile"
+        ln -sf "$(realpath $(basename $dotfile))" "$dotfile"
     fi
 done
 
