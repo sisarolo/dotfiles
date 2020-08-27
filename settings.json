@@ -1,6 +1,6 @@
 {
     "update.showReleaseNotes": false,
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "editor.renderWhitespace": "all",
@@ -8,5 +8,6 @@
     "[Log]": {
         "editor.wordWrap": "on"
     },
-    "files.autoSave": "off"
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000
 }

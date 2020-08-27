@@ -31,9 +31,9 @@ export VISUAL=vim
 export PAGER=less
 
 # Proxy server
-#export http_proxy="http://proxy.domain.com:port"
-#export https_proxy="http://proxy.domain.com:port"
-#export ftp_proxy="http://proxy.domain.com:port"
+#export http_proxy="http://<proxy.com:port>"
+#export https_proxy="http://<proxy.com:port>"
+#export ftp_proxy="http://<proxy.com:port>"
 #export HTTP_PROXY=$http_proxy
 #export HTTPS_PROXY=$https_proxy
 #export FTP_PROXY=$ftp_proxy

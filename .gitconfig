@@ -5,7 +5,13 @@
 
 [credential "https://github.com"]
     username = sisarolo
-    helper = cache # --timeout=900
+    helper = cache --timeout=28800 # 28800 = 8h
+
+#[http "https://<server.com>"]
+#    sslCert = ~/pkifiles/cert-alm.crt
+#    sslKey = ~/pkifiles/cert-alm.key
+#    sslVerify = false
+#    proxy = http://<proxy.com:port>
 
 [log]
     date = local # timestamps will be displayed in local time of the creators time zone
