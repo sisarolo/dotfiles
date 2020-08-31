@@ -84,13 +84,21 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
 # enable colored diff version
 if [ -x /usr/bin/colordiff ]; then
     alias diff='colordiff -u'
 fi
 
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+# decimal to binary conversion command
+# dec2bin [decimal number] [number of digits]
+if [ -x /usr/bin/python3 ]; then
+    dec2bin () {
+        python3 -c "print('{0:0${2:-8}b}'.format(${1:-0}))"
+    }
+fi
 
 # some more ls aliases
 alias ll='ls -lF'
