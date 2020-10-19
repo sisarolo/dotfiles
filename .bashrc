@@ -95,8 +95,12 @@ fi
 # decimal to binary conversion command
 # dec2bin [decimal number] [number of digits]
 if [ -x /usr/bin/python3 ]; then
-    dec2bin () {
+    dec2bin() {
         python3 -c "print('{0:0${2:-8}b}'.format(${1:-0}))"
+    }
+
+    ip2bin() {
+        python3 -c "print('.'.join(map(str,['{0:08b}'.format(int(x if x != '' else '0')) for x in '${1:-0.0.0.0}'.split('.')])))"
     }
 fi
 
