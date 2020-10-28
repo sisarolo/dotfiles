@@ -43,9 +43,12 @@ if has("syntax")
 endif
 
 " jumps to the last position when reopening a file
+"   g'\""   cursor at the bottom of the screen
+"   g'\"zz" cursor in the middle of the screen
 if has("autocmd")
-    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+    au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"zz" | endif
 endif
+
 
 " after this amount of characters a line break is inserted (only for text files)
 "if has("autocmd")
